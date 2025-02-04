@@ -1,0 +1,28 @@
+p{
+    background-color: yellow;
+    color: black;
+    font-size: 
+    font-family: 'Arial', sans-seriff;
+    line-height:100 px; 
+
+
+}
+
+h1{
+    colour: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+.container
+{
+    width: 500px;
+    height: 500px;
+    border: 5px solid pink;
+    background-image: url(akks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border
+
+}

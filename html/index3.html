@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const searchButton =document.getElementById('searchButton');
+    const movieContainer = document.getElementById('movieContainer');
+
+    async function fetchMovie(){
+        const query = searchInput.value;
+        if (!query){
+            alert('Please eneter a movie to search.');
+            return;
+        }
+        const response = await fetch('$(API_URL)?query=${encoeedURIComputer(query)}');{
+            headers:{
+                Authorization: 'Bearer $(API_KEY)';
+                accept: 'aplication/json'
+            }
+    });
+    if (response.ok){
+        const data = await response.json();
+        displayMovies(data)
+    }
+    }
+
+  </script>  
+</body>
+</html>
